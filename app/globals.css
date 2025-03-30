@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --color-primary: #162c5e;
+  --color-second: #00529c;
+  --color-highlight: #09EFFF;
+  --color-accent: #ffaa00;
+  --color-accent-light: #C0E3F6;
+  --color-stroke: #4C4C4C;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #4f5d64;
 }
 
 @theme inline {
