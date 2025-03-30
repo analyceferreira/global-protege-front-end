@@ -1,11 +1,17 @@
-import React from 'react';
+import { cn } from "@/utils/cn";
+import React from "react";
 
-const AppContainer = ({children}: {children: React.ReactNode}) => {
-    return (
-        <div className='flex w-full max-w-[1200px]'>
-            {children}
-        </div>
-    );
+interface IAppContainer {
+  children: React.ReactNode;
+  className?: string;
+}
+
+const AppContainer = ({ children, className }: IAppContainer) => {
+  return (
+    <div className={cn(`flex w-full max-w-[1200px] ${className}`)}>
+      {children}
+    </div>
+  );
 };
 
-export {AppContainer};
+export { AppContainer };

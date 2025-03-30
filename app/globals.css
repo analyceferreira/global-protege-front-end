@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Satoshi", "sans-serif";
+  --font-display: "Inter", "sans-serif";
   --color-primary: #162c5e;
   --color-secondary: #00529c;
   --color-highlight: #09efff;
@@ -22,12 +22,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
