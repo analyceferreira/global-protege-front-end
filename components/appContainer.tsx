@@ -8,9 +8,9 @@ interface IAppContainer {
 
 const AppContainer = ({ children, className }: IAppContainer) => {
   return (
-    <div className={cn(`flex w-full max-w-[1200px] ${className}`)}>
+    <section className={cn(`flex flex-col w-full max-w-[1200px] ${className}`)}>
       {children}
-    </div>
+    </section>
   );
 };
 
