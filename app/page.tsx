@@ -1,11 +1,11 @@
 import { Menu } from "@/components/menu";
-import { FAQ } from "@/sections/faq";
+import { Coverages } from "@/sections/coverages";
 
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center">
       <Menu />
-      <FAQ />
+      <Coverages />
     </div>
   );
 }

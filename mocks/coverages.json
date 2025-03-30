@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Despesa Médica Hospitalar",
+    "description": "Em caso de urgência médica, o seguro viagem oferece assistência completa, com atendimento em clínicas conveniadas ou reembolso das despesas. Seja por acidentes, doenças ou imprevistos de saúde, o viajante conta com cobertura para não arcar com os custos totais do tratamento."
+  },
+  {
+    "id": 2,
+    "title": "Problemas no voo",
+    "description": "Em caso de problemas com o voo, o seguro cobre despesas e oferece assistência em situações como atrasos, cancelamentos ou extravio de bagagem durante a viagem aérea."
+  },
+  {
+    "id": 3,
+    "title": "Assistência farmacêutica",
+    "description": "Essa cobertura reembolsa as despesas com medicamentos essenciais, adquiridos após atendimento médico ou odontológico de emergência durante a viagem. Caso precise comprar medicamentos, o Seguro Viagem garante o reembolso total ou parcial das despesas."
+  },
+  {
+    "id": 4,
+    "title": "Assistência 24h",
+    "description": "Em caso de urgência médica que exija atendimento hospitalar, o seguro oferece assistência, seja por meio de clínicas conveniadas ou reembolso. Você pode entrar em contato com a seguradora e receber atendimento em português, 24 horas por dia, todos os dias da semana."
+  },
+  {
+    "id": 5,
+    "title": "Assistência Odontológica",
+    "description": "Se você precisar de atendimento odontológico de caráter emergencial, terá suas despesas com dentista cobertas. A assistência pode ser por reembolso ou prestação do atendimento."
+  }
+]

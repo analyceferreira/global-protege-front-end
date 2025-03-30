@@ -1,7 +1,7 @@
-import { FAQItem } from "@/services/api/faq";
+import { IFAQItem } from "@/services/api/faq";
 import faqMock from "@/mocks/faq.json";
 
-export async function useFAQ(): Promise<FAQItem[]> {
+export async function useFAQ(): Promise<IFAQItem[]> {
   try {
     return await faqMock;
   } catch (error) {

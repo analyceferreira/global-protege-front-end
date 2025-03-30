@@ -3,11 +3,11 @@ import { AccordionItem } from "@/components/accordion";
 import { AppContainer } from "@/components/appContainer";
 import SectionTitle from "@/components/sectionTitle";
 import { useFAQ } from "@/hooks/faq";
-import { FAQItem } from "@/services/api/faq";
+import { IFAQItem } from "@/services/api/faq";
 import React from "react";
 
 const FAQ: React.FC = async () => {
-  const faq: FAQItem[] = await useFAQ();
+  const faq: IFAQItem[] = await useFAQ();
 
   const renderAccordionItems = () => {
     return faq.map((item) => (
