@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { AppContainer } from "../appContainer";
+import { AppContainer } from "./appContainer";
 
 const Menu = () => {
   return (
-    <nav className="flex justify-center bg-primary shadow-md">
+    <nav className="w-full flex justify-center bg-primary shadow-md">
       <AppContainer>
         <div className="flex items-center justify-between w-full ">
           <Image
