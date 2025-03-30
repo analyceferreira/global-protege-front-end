@@ -69,7 +69,7 @@ const CompaniesBar = () => {
 
   return (
     <div
-      className="w-max h-full justify-between items-center relative -left-[100%] bg-secondary"
+      className="w-max h-full justify-between items-center relative -left-[100%] overflow-hidden bg-secondary"
       ref={container}
     >
       <Box anim="move" className="flex  gap-5 h-[30px]">

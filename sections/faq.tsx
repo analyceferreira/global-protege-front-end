@@ -19,7 +19,7 @@ const FAQ: React.FC = async () => {
     ));
   };
   return (
-    <AppContainer className="max-w-[60%] gap-14">
+    <AppContainer className="md:max-w-[60%]">
       <SectionTitle title="Dúvidas frequentes" />
       <div>{renderAccordionItems()}</div>
     </AppContainer>

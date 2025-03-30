@@ -9,6 +9,7 @@ import React from "react";
 
 const Coverages: React.FC = async () => {
   const items: ICoveragesItem[] = await useCoverages();
+
   const renderAccordionItems = () => {
     return items.map((item, index) => (
       <AccordionItem
@@ -18,6 +19,7 @@ const Coverages: React.FC = async () => {
       />
     ));
   };
+
   return (
     <AppContainer>
       <SectionTitle title="Principais coberturas" />
@@ -29,7 +31,7 @@ const Coverages: React.FC = async () => {
           height={1000}
           className="flex-1/3 max-h-[500px] md:max-w-2/5 lg:max-w-full object-cover "
         />
-        <div className="flex-2/3 flex flex-col w-full gap-4">
+        <div className="flex-2/3 flex flex-col w-full">
           {renderAccordionItems()}
         </div>
       </div>

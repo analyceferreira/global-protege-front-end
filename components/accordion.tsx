@@ -11,7 +11,7 @@ export type AccordionItemType = {
 const AccordionItem = (props: AccordionItemType) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className=" w-full text-left">
+    <div className=" w-full ">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex w-full justify-between text-start "
