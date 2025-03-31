@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { AccordionItem } from "@/components/accordion";
-import { AppContainer } from "@/components/appContainer";
+import { SectionContainer } from "@/components/sectionContainer";
 import SectionTitle from "@/components/sectionTitle";
 import { useCoverages } from "@/hooks/coverages";
 import { ICoveragesItem } from "@/services/api/coverages";
@@ -21,7 +21,7 @@ const Coverages: React.FC = async () => {
   };
 
   return (
-    <AppContainer>
+    <SectionContainer>
       <SectionTitle title="Principais coberturas" />
       <div className="flex flex-col gap-8 md:gap-20 md:flex-row">
         <Image
@@ -35,7 +35,7 @@ const Coverages: React.FC = async () => {
           {renderAccordionItems()}
         </div>
       </div>
-    </AppContainer>
+    </SectionContainer>
   );
 };
 

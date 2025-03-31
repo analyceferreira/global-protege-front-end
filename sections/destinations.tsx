@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { AppContainer } from "@/components/appContainer";
+import { SectionContainer } from "@/components/sectionContainer";
 import { Card } from "@/components/card";
 import SectionTitle from "@/components/sectionTitle";
 import { useDestinations } from "@/hooks/destinations";
@@ -21,12 +21,12 @@ const Destinations: React.FC = async () => {
     ));
   };
   return (
-    <AppContainer>
+    <SectionContainer>
       <SectionTitle title="Por que contratar o seguro viagem para o meu destino?" />
       <div className="flex flex-row flex-wrap justify-between gap-y-6">
         {renderCards()}
       </div>
-    </AppContainer>
+    </SectionContainer>
   );
 };
 

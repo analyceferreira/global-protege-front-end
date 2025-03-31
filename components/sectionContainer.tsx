@@ -1,12 +1,12 @@
 import { cn } from "@/utils/cn";
 import React from "react";
 
-interface IAppContainer {
+interface ISectionContainer {
   children: React.ReactNode;
   className?: string;
 }
 
-const AppContainer = ({ children, className }: IAppContainer) => {
+const SectionContainer = ({ children, className }: ISectionContainer) => {
   return (
     <section className={cn(`flex flex-col w-full max-w-[1200px] ${className}`)}>
       {children}
@@ -14,4 +14,4 @@ const AppContainer = ({ children, className }: IAppContainer) => {
   );
 };
 
-export { AppContainer };
+export { SectionContainer };

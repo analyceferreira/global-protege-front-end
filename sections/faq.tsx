@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { AccordionItem } from "@/components/accordion";
-import { AppContainer } from "@/components/appContainer";
+import { SectionContainer } from "@/components/sectionContainer";
 import SectionTitle from "@/components/sectionTitle";
 import { useFAQ } from "@/hooks/faq";
 import { IFAQItem } from "@/services/api/faq";
@@ -19,10 +19,10 @@ const FAQ: React.FC = async () => {
     ));
   };
   return (
-    <AppContainer className="md:max-w-[60%]">
+    <SectionContainer className="md:max-w-[60%]">
       <SectionTitle title="Dúvidas frequentes" />
       <div>{renderAccordionItems()}</div>
-    </AppContainer>
+    </SectionContainer>
   );
 };
 

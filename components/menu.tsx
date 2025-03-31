@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { AppContainer } from "./appContainer";
+import { SectionContainer } from "./sectionContainer";
 
 const Menu = () => {
   return (
     <nav className="w-full flex justify-center bg-primary shadow-md">
-      <AppContainer>
+      <SectionContainer>
         <div className="flex items-center justify-between w-full ">
           <Image
             src="/logo-GlobalProtege-expanded.png"
@@ -28,7 +28,7 @@ const Menu = () => {
             </li>
           </ul>
         </div>
-      </AppContainer>
+      </SectionContainer>
     </nav>
   );
 };
