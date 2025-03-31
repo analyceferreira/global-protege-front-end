@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Europa",
+    "description": "O seguro viagem garante atendimento médico em casos de emergências, evitando custos elevados com hospitais e medicamentos, que podem ser muito caros no exterior. Além disso, muitos países exigem uma cobertura mínima de 30 mil Euros de cobertura, sem o seguro você pode ser impedido de embarcar.",
+    "image": "/destinations/europa-global-protege-seguro-viagem.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "América do Norte",
+    "description": "Apesar de não ser obrigatório o seguro viagem, nos EUA e no Canadá, os custos com atendimento médico podem ser extremamente altos. O seguro viagem garante cobertura em casos de emergências médicas, evitando despesas inesperadas e potencialmente devastadoras.",
+    "image": "/destinations/america-do-norte-canada-estados-unidos-mexico-global-protege-seguro-viagem.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Ásia",
+    "description": "Os custos com atendimento médico podem variar bastante na Ásia, e em alguns países, o sistema de saúde pode não ser tão acessível. O seguro viagem garante que você tenha cobertura em caso de emergências médicas, evitando despesas inesperadas.",
+    "image": "/destinations/asia-global-protege-seguro-viagem.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "América do Sul",
+    "description": "A América do Sul é rica em destinos variados, desde as praias do Brasil até as montanhas do Peru e as selvas da Amazônia. Com o seguro, você está protegido contra imprevistos de saúde, como doenças tropicais ou acidentes durante atividades em regiões remotas.",
+    "image": "/destinations/america-do-sul-global-protege-seguro-viagem.jpeg"
+  },
+  {
+    "id": 5,
+    "title": "África",
+    "description": "Enquanto grandes cidades como Joanesburgo e Nairobi têm bons serviços de saúde, muitas áreas remotas da África, como safáris ou vilarejos em regiões rurais, têm acesso limitado a hospitais e clínicas. O seguro viagem garante que você tenha cobertura médica, mesmo nos lugares mais afastados.",
+    "image": "/destinations/africa-global-protege-seguro-viagem.jpeg"
+  },
+  {
+    "id": 6,
+    "title": "América Central",
+    "description": "Embora as principais cidades da América Central, como San José, Cidade da Guatemala e Panamá, tenham boas opções de atendimento médico, em áreas rurais ou regiões mais afastadas, o acesso a serviços de saúde pode ser limitado. O seguro viagem garante cobertura médica de emergência, mesmo nas localidades mais remotas.",
+    "image": "/destinations/america-central-global-protege-seguro-viagem.jpeg"
+  }
+]
