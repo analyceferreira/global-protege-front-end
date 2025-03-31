@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "label": "1º Passo",
+    "title": "Preencha os dados da sua viagem",
+    "description": "Insira os dados na página inicial (Destinos, Datas, Nome, Telefone e email)"
+  },
+  {
+    "id": 2,
+    "label": "2º Passo",
+    "title": "Compare o seu seguro",
+    "description": "Selecione o melhor seguro de acordo com a sua necessidade e com as melhores coberturas com praticidade e segurança."
+  },
+  {
+    "id": 3,
+    "label": "3º Passo",
+    "title": "Contrate Online",
+    "description": "Escolha sua forma de pagamento e finalize o processo."
+  },
+  {
+    "id": 4,
+    "label": "4º Passo",
+    "title": "Receba sua apólice por email",
+    "description": "A partir daqui é com a gente. Você receberá seu email de compra aprovada e jajá terá sua apólice em mãos."
+  }
+]
