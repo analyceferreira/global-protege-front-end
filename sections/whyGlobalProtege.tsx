@@ -15,14 +15,15 @@ const WhyGlobalProtege: React.FC = async () => {
         key={index}
         title={card.title}
         description={card.description}
-        className="md:p-3 md:max-w-[30%] border-white md:h-full"
+        titleClassName="md:text-2xl text-white"
+        className="md:p-3 md:max-w-[30%] border-primary md:h-full text-white bg-primary/80"
         textCenter
       />
     ));
   };
   return (
     <div
-      className='bg-[url("/mulher-feliz-viajando-global-protege-seguro-viagem-3.jpg")]  bg-cover bg-no-repeat bg-bottom overflow-clip
+      className='bg-[url("/mulher-feliz-viajando-global-protege-seguro-viagem-1.jpg")]  bg-cover bg-no-repeat bg-bottom overflow-clip
                  w-full md:h-[640px] 
                  flex justify-center'
     >

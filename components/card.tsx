@@ -8,6 +8,7 @@ interface CardProps {
   image?: string;
   imageAlt?: string;
   strokeColor?: string;
+  titleClassName?: string;
   className?: string;
   textCenter?: boolean;
 }
@@ -18,6 +19,7 @@ const Card: React.FC<CardProps> = ({
   image,
   imageAlt,
   strokeColor = "border-stroke",
+  titleClassName,
   className,
   textCenter = false,
 }) => {
@@ -39,7 +41,15 @@ const Card: React.FC<CardProps> = ({
           className="object-cover rounded-xl w-full"
         />
       )}
-      <h2 className="text-secondary text-lg md:text-2xl font-bold">{title}</h2>
+      <div className="md:min-h-24 flex justify-center items-center">
+        <h2
+          className={cn(
+            `text-secondary text-lg md:text-2xl font-bold ${titleClassName}`
+          )}
+        >
+          {title}
+        </h2>
+      </div>
       <p className="md:min-h-36">{description}</p>
     </div>
   );
