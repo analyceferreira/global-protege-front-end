@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Planos Completo e Confiáveis",
+    "description": "Oferecemos seguros viagem com coberturas abrangentes, garantindo proteção em qualquer destino."
+  },
+  {
+    "id": 2,
+    "title": "Atendimento Rápido e Sem Burocracia",
+    "description": "Contratação simples e 100% online, sem complicações, para que você viaje com segurança e tranquilidade."
+  },
+  {
+    "id": 3,
+    "title": "Melhor Custo-Benefício",
+    "description": "Planos com preços competitivos e excelente cobertura, proporcionando proteção sem pesar no seu orçamento."
+  },
+  {
+    "id": 4,
+    "title": "Assistência 24h em Todo o Mundo",
+    "description": "Suporte emergencial a qualquer hora e lugar, garantindo ajuda quando você mais precisar."
+  },
+  {
+    "id": 5,
+    "title": "Parceria com Seguradoras de Confiança",
+    "description": "Trabalhamos apenas com seguradoras reconhecidas no mercado para oferecer segurança e credibilidade."
+  }
+]
