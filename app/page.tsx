@@ -6,7 +6,7 @@ import { FAQ } from "@/sections/faq";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center overflow-clip">
+    <div className="flex flex-col justify-center items-center overflow-clip text-sm sm:text-base">
       <Menu />
       <CompaniesBar />
       <Destinations />

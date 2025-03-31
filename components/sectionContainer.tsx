@@ -8,7 +8,11 @@ interface ISectionContainer {
 
 const SectionContainer = ({ children, className }: ISectionContainer) => {
   return (
-    <section className={cn(`flex flex-col w-full max-w-[1200px] ${className}`)}>
+    <section
+      className={cn(
+        `flex flex-col w-full px-4 lg:px-0 max-w-[1200px] ${className}`
+      )}
+    >
       {children}
     </section>
   );

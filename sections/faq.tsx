@@ -19,7 +19,7 @@ const FAQ: React.FC = async () => {
     ));
   };
   return (
-    <SectionContainer className="md:max-w-[60%]">
+    <SectionContainer className="md:max-w-[90%] lg:max-w-[60%]">
       <SectionTitle title="Dúvidas frequentes" />
       <div>{renderAccordionItems()}</div>
     </SectionContainer>

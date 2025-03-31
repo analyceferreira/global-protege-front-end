@@ -23,7 +23,7 @@ const Destinations: React.FC = async () => {
   return (
     <SectionContainer>
       <SectionTitle title="Por que contratar o seguro viagem para o meu destino?" />
-      <div className="flex flex-row flex-wrap justify-between gap-y-6">
+      <div className="flex flex-row flex-wrap justify-between gap-y-2 md:gap-y-6">
         {renderCards()}
       </div>
     </SectionContainer>
