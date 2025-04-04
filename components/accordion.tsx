@@ -6,17 +6,22 @@ import { useState } from "react";
 export type AccordionItemType = {
   title: string;
   description: string;
+  dividerOff?: boolean;
 };
 
-const AccordionItem = (props: AccordionItemType) => {
+const AccordionItem = ({
+  title,
+  description,
+  dividerOff = false,
+}: AccordionItemType) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className=" w-full ">
+    <div className=" w-full *:text-left">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full justify-between text-start "
+        className="flex w-full justify-between"
       >
-        <h3 className={`text-base font-bold`}>{props.title}</h3>
+        <h3 className={`text-base font-bold`}>{title}</h3>
         <ChevronDown
           size={22}
           className={`transition-transform duration-300
@@ -24,10 +29,8 @@ const AccordionItem = (props: AccordionItemType) => {
         />
       </button>
 
-      {isOpen && (
-        <div className="py-2 text-secondary-text">{props.description}</div>
-      )}
-      <hr className="my-4 h-[1px] text-stroke-light" />
+      {isOpen && <div className="py-2 text-secondary-text">{description}</div>}
+      {!dividerOff && <hr className="my-4 h-[1px] text-stroke-light" />}
     </div>
   );
 };

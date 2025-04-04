@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Affinity",
+    "guaranteeBy": "KOVR SEGURADORA S.A",
+    "description": "Affinity Seguro Viagem, vencedora do Prêmio Reclame Aqui no último ano, destaca-se pelo compromisso com o atendimento de qualidade e a resolutividade das demandas de seus clientes. Com mais de 30 anos de experiência, a empresa oferece planos personalizados para viajantes brasileiros, incluindo cobertura para esportes, assistência médica e proteção contra imprevistos como bagagem perdida. Com suporte especializado 24 horas, você pode viajar com tranquilidade, sabendo que está bem protegido e com o suporte necessário para aproveitar sua viagem com confiança.",
+    "logoUrl": "/companies/affinity.jpeg",
+    "whiteLogoUrl": "/companies/affinity-white.png"
+  },
+  {
+    "id": 2,
+    "name": "Assist Card",
+    "guaranteeBy": "STARR INTERNATIONAL BRASIL SEGUROS/A",
+    "description": "A Assist Card oferece seguros viagem completos em mais de 190 países, com assistência médica e não médica, garantindo praticidade e segurança. A empresa gerencia a maior rede médica credenciada do mundo, pronta para atender desde problemas simples, como problemas complicados. Além disso, a Assist Card oferece planos exclusivos para pets, telemedicina para maior conforto durante a viagem e acesso a salas VIP, proporcionando uma experiência de viagem ainda mais tranquila e segura.",
+    "logoUrl": "/companies/assistcard.jpg",
+    "whiteLogoUrl": "/companies/assistcard-white.png"
+  },
+  {
+    "id": 3,
+    "name": "Universal Assistence",
+    "guaranteeBy": "ZURICH SEGUROS S/A",
+    "description": "A Universal Assistance é uma das líderes globais no mercado de seguros de viagem, com mais de 40 anos de experiência e foco na excelência. Com soluções para todos os perfis, destinos e orçamentos, a empresa oferece apólices para seguros de viagem nacionais, internacionais, multidestinos e coberturas específicas. A maior seguradora da América Latina, a Universal Assistance já atendeu mais de 10 milhões de viajantes ao redor do mundo e realiza cerca de 250 mil chamadas de usuários anualmente, garantindo segurança e confiança para suas viagens.",
+    "logoUrl": "/companies/universalassistance.jpeg",
+    "whiteLogoUrl": "/companies/universalassistance-white.png"
+  },
+  {
+    "id": 4,
+    "name": "ITA",
+    "guaranteeBy": "KOVR SEGURADORA S.A",
+    "description": "A ITA se destaca no segmento de seguros para viajantes pela excelência no atendimento, ótimo custo-benefício e compromisso com a ética, boas práticas e governança corporativa. Oferece assistência completa para viajantes globais, incluindo intercambistas, com coberturas abrangentes, ambulatório virtual e soluções para seguros internacionais, multidestinos e nacionais. Com atendimento ágil e transparente, a ITA proporciona segurança e tranquilidade em todas as etapas da viagem.",
+    "logoUrl": "/companies/ita.jpg",
+    "whiteLogoUrl": "/companies/ita-white.png"
+  },
+  {
+    "id": 5,
+    "name": "GTA",
+    "guaranteeBy": "IZA seguradora S.A",
+    "description": "Com mais de 30 anos no mercado, a Global Travel Assistance (GTA) oferece um seguro viagem completo e confiável, garantindo ampla cobertura para destinos nacionais e internacionais. Independentemente do tipo de viagem – lazer, negócios, religioso ou intercâmbio –, contratar o seguro viagem GTA é sinônimo de tranquilidade, segurança e suporte de qualidade em qualquer lugar do mundo.",
+    "logoUrl": "/companies/gta.jpg",
+    "whiteLogoUrl": "/companies/gta-white.png"
+  },
+  {
+    "id": 6,
+    "name": "Coris",
+    "guaranteeBy": "AXA Seguros S.A",
+    "description": "Com mais de 3 décadas de experiência, a Coris Seguro Viagem é referência no setor, oferecendo planos abrangentes para todos os tipos de viajantes. Com uma das coberturas mais completas do mercado, garante atendimento exclusivo, menos burocracia e excelente custo-benefício. Seja para viagens nacionais, internacionais, multidestinos ou com coberturas especiais, a Coris cuida da sua segurança antes, durante e depois da viagem, para que você viaje sem preocupações.",
+    "logoUrl": "/companies/coris.jpg",
+    "whiteLogoUrl": "/companies/coris-white.png"
+  }
+]

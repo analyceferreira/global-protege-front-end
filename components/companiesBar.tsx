@@ -7,10 +7,10 @@ import { JSX, useRef } from "react";
 import { ReactNode } from "react";
 
 const companies = [
-  { name: "Company 1", logo: "/companies/coris.png" },
-  { name: "Company 2", logo: "/companies/assistcard.png" },
-  { name: "Company 3", logo: "/companies/affinity.png" },
-  { name: "Company 4", logo: "/companies/universalassistance.png" },
+  { name: "Company 1", logo: "/companies/coris-white.png" },
+  { name: "Company 2", logo: "/companies/assistcard-white.png" },
+  { name: "Company 3", logo: "/companies/affinity-white.png" },
+  { name: "Company 4", logo: "/companies/universalassistance-white.png" },
 ];
 
 const Box = ({
