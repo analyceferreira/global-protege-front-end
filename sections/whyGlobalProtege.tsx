@@ -15,8 +15,8 @@ const WhyGlobalProtege: React.FC = async () => {
         key={index}
         title={card.title}
         description={card.description}
-        titleClassName="md:text-2xl text-white"
-        className="md:p-3 md:max-w-[30%] border-primary md:h-full text-white bg-primary/80"
+        titleClassName="md:text-2xl"
+        className="md:p-3 md:max-w-[30%] md:h-full bg-white/80"
         textCenter
       />
     ));

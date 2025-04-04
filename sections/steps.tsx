@@ -20,7 +20,7 @@ const Steps: React.FC = () => {
           description="Insira os dados na página inicial (Destinos, Datas, Nome, Telefone e email)"
         >
           <LucideTextSelect
-            className="text-primary size-8 sm:size-10"
+            className="text-white size-8 sm:size-10"
             strokeWidth={1.5}
           />
         </Step>
@@ -30,7 +30,7 @@ const Steps: React.FC = () => {
           description="Selecione o melhor seguro de acordo com a sua necessidade e com as melhores coberturas com praticidade e segurança."
         >
           <LucideBookCopy
-            className="text-primary size-10 md:size-10"
+            className="text-white size-10 md:size-10"
             strokeWidth={1.5}
           />
         </Step>
@@ -40,7 +40,7 @@ const Steps: React.FC = () => {
           description="Escolha sua forma de pagamento e finalize o processo."
         >
           <LucideMonitorCheck
-            className="text-primary size-10 md:size-10"
+            className="text-white size-10 md:size-10"
             strokeWidth={1.5}
           />
         </Step>
@@ -50,7 +50,7 @@ const Steps: React.FC = () => {
           description="A partir daqui é com a gente. Você receberá seu email de compra aprovada e jajá terá sua apólice em mãos."
         >
           <LucideMailCheck
-            className="text-primary size-10 md:size-10"
+            className="text-white size-10 md:size-10"
             strokeWidth={1.5}
           />
         </Step>

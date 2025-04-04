@@ -1,6 +1,5 @@
 import { CompaniesBar } from "@/components/companiesBar";
 import { Menu } from "@/components/menu";
-import { Companies } from "@/sections/companies";
 import { Coverages } from "@/sections/coverages";
 import { Destinations } from "@/sections/destinations";
 import { FAQ } from "@/sections/faq";
