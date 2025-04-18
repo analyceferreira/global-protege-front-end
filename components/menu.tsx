@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { SectionContainer } from "./sectionContainer";
+import { SectionContainer } from "@/components/sectionContainer";
 
 const Menu = () => {
   return (
