@@ -17,8 +17,8 @@ const Company: React.FC<ICompanyProps> = ({
 }: ICompanyProps) => {
   return (
     <div
-      className="inline-flex flex-col h-full min-h-max justify-center items-center
-                md:max-w-[32%] p-6 gap-6 
+      className="inline-flex flex-col h-full w-full  items-center
+                 p-6 gap-6 
                 bg-gray-300 rounded-xl"
     >
       <Image
