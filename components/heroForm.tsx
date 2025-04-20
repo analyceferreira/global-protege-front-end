@@ -3,22 +3,13 @@
 import type React from "react";
 
 import { useState } from "react";
-import { CalendarIcon, MapPinIcon } from "lucide-react";
+import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Checkbox } from "@/components/ui/checkbox";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import {
   Popover,
   PopoverContent,
@@ -26,7 +17,10 @@ import {
 } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
 import { Label } from "@/components/ui/label";
-import { cn } from "@/utils/cn";
+import { useForm } from "react-hook-form";
+import { CoupomCheckbox } from "./couponCheckbox";
+import { InputLabel } from "./ui/inputLabel";
+import { DropdownLabel } from "./ui/dropdownLabel";
 
 // Função para aplicar máscara de telefone
 const applyPhoneMask = (value: string) => {
@@ -58,7 +52,6 @@ const formSchema = z.object({
   nome: z.string().min(3, "Nome invalido"),
   email: z.string().email("Insira um e-mail válido"),
   celular: z.string().min(14, "Insira um número de celular válido"),
-  hasCoupon: z.boolean(),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -82,14 +75,12 @@ export function HeroForm() {
       nome: "",
       email: "",
       celular: "",
-      hasCoupon: true,
     },
   });
 
   // Observando valores do formulário
   const embarqueDate = watch("embarqueDate");
   const desembarqueDate = watch("desembarqueDate");
-  const hasCoupon = watch("hasCoupon");
   const celular = watch("celular");
 
   // Função para enviar os dados para a API
@@ -99,18 +90,20 @@ export function HeroForm() {
     setSubmitMessage("");
 
     try {
+      const body = JSON.stringify({
+        ...data,
+        embarqueDate: format(data.embarqueDate, "yyyy-MM-dd"),
+        desembarqueDate: format(data.desembarqueDate, "yyyy-MM-dd"),
+        // Removendo a formatação do celular para enviar apenas os números
+        celular: data.celular.replace(/\D/g, ""),
+      });
+      console.log("Dados do formulário:", body);
       const response = await fetch("http://127.0.0.1:4015/api", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          ...data,
-          embarqueDate: format(data.embarqueDate, "yyyy-MM-dd"),
-          desembarqueDate: format(data.desembarqueDate, "yyyy-MM-dd"),
-          // Removendo a formatação do celular para enviar apenas os números
-          celular: data.celular.replace(/\D/g, ""),
-        }),
+        body,
       });
 
       if (!response.ok) {
@@ -159,35 +152,21 @@ export function HeroForm() {
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
-            <div className="space-y-1">
-              <Label htmlFor="destino">Destino</Label>
-              <Select
-                onValueChange={(value) => setValue("destino", value)}
-                defaultValue=""
-              >
-                <SelectTrigger
-                  id="destino"
-                  className="w-full md:min-h-12 bg-white border-none"
-                >
-                  <div className="flex items-center gap-2 placeholder:text-red-500">
-                    <MapPinIcon className="h-4 w-4" />
-                    <SelectValue placeholder="Destino" />
-                  </div>
-                </SelectTrigger>
-                <SelectContent className="bg-white">
-                  <SelectItem value="europa">Europa</SelectItem>
-                  <SelectItem value="america-norte">
-                    América do Norte
-                  </SelectItem>
-                  <SelectItem value="america-sul">América do Sul</SelectItem>
-                  <SelectItem value="asia">Ásia</SelectItem>
-                  <SelectItem value="oceania">Oceania</SelectItem>
-                </SelectContent>
-              </Select>
-              {errors.destino && (
-                <p className="text-tiny font-medium text-error">{errors.destino.message}</p>
-              )}
-            </div>
+            <DropdownLabel
+              label="Destino"
+              htmlFor="destino"
+              itens={[
+                { name: "Europa", value: "europa" },
+                { name: "América do Norte", value: "america-norte" },
+                { name: "América do Sul", value: "america-sul" },
+                { name: "Ásia", value: "asia" },
+                { name: "Oceania", value: "oceania" },
+              ]}
+              onValueChange={(value) => setValue("destino", value)}
+              defaultValue=""
+              error={errors.destino}
+              placeholder="Destino"
+            />
 
             <div className="space-y-1">
               <Label htmlFor="embarqueDate">Embarque no Brasil</Label>
@@ -269,66 +248,36 @@ export function HeroForm() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="space-y-1">
-              <Label htmlFor="nome">Nome</Label>
-              <Input id="nome" placeholder="Nome" {...register("nome")} />
-              {errors.nome && (
-                <p className="text-tiny font-medium text-error">{errors.nome.message}</p>
-              )}
-            </div>
+            <InputLabel
+              label="Nome"
+              htmlFor="nome"
+              value={watch("nome")}
+              placeholder="Seu Nome Completo"
+              error={errors.nome}
+              {...register("nome")}
+            />
 
-            <div className="space-y-1">
-              <Label htmlFor="email">E-mail</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="E-mail"
-                {...register("email")}
-              />
-              {errors.email && (
-                <p className="text-tiny font-medium text-error">{errors.email.message}</p>
-              )}
-            </div>
+            <InputLabel
+              label="Email"
+              htmlFor="email"
+              value={watch("email")}
+              placeholder="seu@email.com"
+              error={errors.email}
+              {...register("email")}
+            />
 
-            <div className="space-y-1">
-              <Label htmlFor="celular">Celular</Label>
-              <Input
-                id="celular"
-                type="tel"
-                placeholder="Celular"
-                value={celular}
-                onChange={handlePhoneChange}
-              />
-              {errors.celular && (
-                <p className="text-tiny font-medium text-error">{errors.celular.message}</p>
-              )}
-            </div>
+            <InputLabel
+              label="Celular"
+              htmlFor="celular"
+              placeholder="(xx) xxxxx-xxxx"
+              value={celular}
+              onChange={handlePhoneChange}
+              error={errors.celular}
+            />
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center space-x-2">
-              <Checkbox
-                id="hasCoupon"
-                checked={hasCoupon}
-                onCheckedChange={(checked) =>
-                  setValue("hasCoupon", checked as boolean)
-                }
-                className="border-black border-2 size-5 data-[state=checked]:bg-green-600 data-[state=checked]:text-white"
-              />
-              <Label
-                htmlFor="hasCoupon"
-                className={cn(
-                  `text-base font-medium ${
-                    hasCoupon.valueOf() ? "text-green-800" : "text-black"
-                  }`
-                )}
-              >
-                {hasCoupon.valueOf()
-                  ? "Cupom de 20% de desconto aplicado"
-                  : "Aplicar cupom de 20% de desconto"}
-              </Label>
-            </div>
-
+            <CoupomCheckbox />
             <Button
               type="submit"
               size="lg"
