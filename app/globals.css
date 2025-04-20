@@ -12,6 +12,8 @@
   --color-accent-light: #c0e3f6;
   --color-stroke: #bcbcbc;
   --color-stroke-light: #d4dbde;
+  --color-error: oklch(57.7% 0.245 27.325);
+  --text-tiny: 0.75rem;
 }
 
 :root {
