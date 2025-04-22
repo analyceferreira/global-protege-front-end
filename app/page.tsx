@@ -1,7 +1,13 @@
 import { CompaniesBar } from "@/components/companiesBar";
 import { Menu } from "@/components/menu";
+import { Companies } from "@/sections/companies";
+import { Coverages } from "@/sections/coverages";
+import { Destinations } from "@/sections/destinations";
+import { FAQ } from "@/sections/faq";
 import { Footer } from "@/sections/footer";
 import Hero from "@/sections/hero";
+import { Steps } from "@/sections/steps";
+import WhyGlobalProtege from "@/sections/whyGlobalProtege";
 
 export default function Home() {
   return (
@@ -9,8 +15,12 @@ export default function Home() {
       <Menu />
       <CompaniesBar />
       <Hero />
-      <Footer />
-      <Footer />
+      <Companies />
+      <WhyGlobalProtege />
+      <Destinations />
+      <Coverages />
+      <Steps />
+      <FAQ />
       <Footer />
     </div>
   );

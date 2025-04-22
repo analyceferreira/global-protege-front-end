@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { SectionContainer } from "@/components/sectionContainer";
+import Link from "next/link";
 
 const Menu = () => {
   return (
-    <nav className="w-full flex justify-center bg-primary shadow-md">
+    <nav className="w-full flex justify-center bg-primary shadow-md sticky top-0 z-50">
       <SectionContainer>
         <div className="flex items-center justify-between w-full ">
           <Image
@@ -15,16 +16,16 @@ const Menu = () => {
           />
           <ul className="flex space-x-6 text-white *:hover:text-accent">
             <li>
-              <a href="#">Home</a>
+              <Link href="/#">Home</Link>
             </li>
             <li>
-              <a href="#insurance">Seguro Viagem</a>
+              <Link href="/#companies">Seguradora</Link>
             </li>
             <li>
-              <a href="#companies">Seguradora</a>
+              <Link href="/#why-global-protege">Seguro Viagem</Link>
             </li>
             <li>
-              <a href="#faq">FAQ</a>
+              <Link href="/#faq">FAQ</Link>
             </li>
           </ul>
         </div>

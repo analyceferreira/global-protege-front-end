@@ -123,18 +123,6 @@ export function HeroForm() {
           Encontre o seguro viagem ideal para seu destino
         </h3>
 
-        {submitSuccess !== null && (
-          <div
-            className={`mb-6 p-4 rounded-md text-sm ${
-              submitSuccess
-                ? "bg-green-100 text-green-800"
-                : "bg-red-100 text-red-800"
-            }`}
-          >
-            {submitMessage}
-          </div>
-        )}
-
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
             <DropdownLabel
@@ -162,7 +150,7 @@ export function HeroForm() {
               placeholder="Embarque no Brasil"
               disabled={(date) => date < new Date()}
             />
-            
+
             <CalendarLabel
               label="Desembarque no Brasil"
               htmlFor="desembarqueDate"
@@ -216,6 +204,17 @@ export function HeroForm() {
             </Button>
           </div>
         </form>
+        {submitSuccess !== null && (
+          <div
+            className={`mt-3 p-4 rounded-md text-sm ${
+              submitSuccess
+                ? "bg-green-100 text-green-800"
+                : "bg-red-100 text-red-800"
+            }`}
+          >
+            {submitMessage}
+          </div>
+        )}
       </CardContent>
     </Card>
   );

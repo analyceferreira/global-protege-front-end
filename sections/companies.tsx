@@ -37,7 +37,7 @@ export function Companies() {
   );
 
   return (
-    <SectionContainer>
+    <SectionContainer id="companies" className="mb-8">
       <SectionTitle title="Nossas empresas parceiras" />
       <Carousel
         plugins={[plugin.current]}

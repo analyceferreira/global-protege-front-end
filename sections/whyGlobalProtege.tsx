@@ -23,6 +23,7 @@ const WhyGlobalProtege: React.FC = async () => {
   };
   return (
     <div
+      id="why-global-protege"
       className='bg-[url("/mulher-feliz-viajando-global-protege-seguro-viagem-1.jpg")]  bg-cover bg-no-repeat bg-bottom overflow-clip
                  w-full md:h-[640px] 
                  flex justify-center'
