@@ -3,26 +3,17 @@
 import type React from "react";
 
 import { useState } from "react";
-import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
-import { ptBR } from "date-fns/locale";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { Calendar } from "@/components/ui/calendar";
-import { Label } from "@/components/ui/label";
 import { useForm } from "react-hook-form";
 import { CoupomCheckbox } from "./couponCheckbox";
 import { InputLabel } from "./ui/inputLabel";
 import { DropdownLabel } from "./ui/dropdownLabel";
+import { CalendarLabel } from "./ui/calendarLabel";
 
-// Função para aplicar máscara de telefone
 const applyPhoneMask = (value: string) => {
   // Remove todos os caracteres não numéricos
   const numericValue = value.replace(/\D/g, "");
@@ -40,7 +31,6 @@ const applyPhoneMask = (value: string) => {
   }
 };
 
-// Definindo o schema de validação com Zod
 const formSchema = z.object({
   destino: z.string().min(1, "Selecione um destino"),
   embarqueDate: z.date({
@@ -61,7 +51,6 @@ export function HeroForm() {
   const [submitSuccess, setSubmitSuccess] = useState<boolean | null>(null);
   const [submitMessage, setSubmitMessage] = useState("");
 
-  // Inicializando o formulário com React Hook Form
   const {
     register,
     handleSubmit,
@@ -78,12 +67,10 @@ export function HeroForm() {
     },
   });
 
-  // Observando valores do formulário
   const embarqueDate = watch("embarqueDate");
   const desembarqueDate = watch("desembarqueDate");
   const celular = watch("celular");
 
-  // Função para enviar os dados para a API
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
     setSubmitSuccess(null);
@@ -94,11 +81,10 @@ export function HeroForm() {
         ...data,
         embarqueDate: format(data.embarqueDate, "yyyy-MM-dd"),
         desembarqueDate: format(data.desembarqueDate, "yyyy-MM-dd"),
-        // Removendo a formatação do celular para enviar apenas os números
         celular: data.celular.replace(/\D/g, ""),
       });
       console.log("Dados do formulário:", body);
-      const response = await fetch("http://127.0.0.1:4015/api", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -125,7 +111,6 @@ export function HeroForm() {
     }
   };
 
-  // Manipulador para o campo de telefone com máscara
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const maskedValue = applyPhoneMask(e.target.value);
     setValue("celular", maskedValue, { shouldValidate: true });
@@ -168,83 +153,26 @@ export function HeroForm() {
               placeholder="Destino"
             />
 
-            <div className="space-y-1">
-              <Label htmlFor="embarqueDate">Embarque no Brasil</Label>
-              <Popover>
-                <PopoverTrigger asChild>
-                  <Button
-                    variant="outline"
-                    className={`w-full justify-start text-left font-normal hover:bg-white border-none  ${
-                      !embarqueDate && "text-muted-foreground"
-                    } md:min-h-12`}
-                    type="button"
-                  >
-                    <CalendarIcon className="mr-2 h-4 w-4" />
-                    {embarqueDate ? (
-                      format(embarqueDate, "dd 'de' MMMM 'de' yyyy", {
-                        locale: ptBR,
-                      })
-                    ) : (
-                      <span>Embarque no Brasil</span>
-                    )}
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent className="w-auto p-0 bg-white">
-                  <Calendar
-                    mode="single"
-                    selected={embarqueDate}
-                    onSelect={(date) => date && setValue("embarqueDate", date)}
-                    initialFocus
-                    locale={ptBR}
-                  />
-                </PopoverContent>
-              </Popover>
-              {errors.embarqueDate && (
-                <p className="text-tiny font-medium text-error">
-                  {errors.embarqueDate.message}
-                </p>
-              )}
-            </div>
+            <CalendarLabel
+              label="Embarque no Brasil"
+              htmlFor="embarqueDate"
+              selected={embarqueDate}
+              onSelect={(date) => date && setValue("embarqueDate", date)}
+              error={errors.embarqueDate}
+              placeholder="Embarque no Brasil"
+              disabled={(date) => date < new Date()}
+            />
+            
+            <CalendarLabel
+              label="Desembarque no Brasil"
+              htmlFor="desembarqueDate"
+              selected={desembarqueDate}
+              onSelect={(date) => date && setValue("desembarqueDate", date)}
+              error={errors.desembarqueDate}
+              placeholder="Desembarque no Brasil"
+              disabled={(date) => date < new Date() || (embarqueDate && date <= new Date(embarqueDate.getTime() + 24 * 1000))}
+            />
 
-            <div className="space-y-1">
-              <Label htmlFor="desembarqueDate">Desembarque no Brasil</Label>
-              <Popover>
-                <PopoverTrigger asChild>
-                  <Button
-                    variant="outline"
-                    className={`w-full justify-start text-left font-normal border-none hover:bg-white md:min-h-12 ${
-                      !desembarqueDate && "text-muted-foreground"
-                    }`}
-                    type="button"
-                  >
-                    <CalendarIcon className="mr-2 h-4 w-4" />
-                    {desembarqueDate ? (
-                      format(desembarqueDate, "dd 'de' MMMM 'de' yyyy", {
-                        locale: ptBR,
-                      })
-                    ) : (
-                      <span>Desembarque no Brasil</span>
-                    )}
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent className="w-auto p-0 bg-white">
-                  <Calendar
-                    mode="single"
-                    selected={desembarqueDate}
-                    onSelect={(date) =>
-                      date && setValue("desembarqueDate", date)
-                    }
-                    initialFocus
-                    locale={ptBR}
-                  />
-                </PopoverContent>
-              </Popover>
-              {errors.desembarqueDate && (
-                <p className="text-tiny font-medium text-error">
-                  {errors.desembarqueDate.message}
-                </p>
-              )}
-            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
