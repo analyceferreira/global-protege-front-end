@@ -14,7 +14,7 @@ import { FieldError } from "react-hook-form";
 
 type CalendarLabelProps = Omit<DayPickerProps, "mode"> & {
   id?: string;
-  label: string;
+  label?: string;
   htmlFor: string;
   selected?: Date;
   onSelect?: (date: Date | undefined) => void;
@@ -36,7 +36,7 @@ const CalendarLabel = ({
 }: CalendarLabelProps) => {
   return (
     <div id={id} className="text-sm font-medium">
-      <Label htmlFor={htmlFor}>{label}</Label>
+      {label && <Label htmlFor={htmlFor}>{label}</Label>}
       <Popover>
         <PopoverTrigger asChild>
           <Button

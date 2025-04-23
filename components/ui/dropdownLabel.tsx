@@ -13,7 +13,7 @@ import { FieldError } from "react-hook-form";
 
 interface ISelectLabelProps extends SelectTriggerProps {
   itens?: Array<{ name: string; value: string }>;
-  label: string;
+  label?: string;
   htmlFor: string;
   onValueChange: (value: string) => void;
   defaultValue?: string;
@@ -35,9 +35,11 @@ const DropdownLabel = ({
 }: ISelectLabelProps) => {
   return (
     <div className="text-sm font-medium">
-      <Label className="mb-0.5" htmlFor={htmlFor}>
-        {label}
-      </Label>
+      {label && (
+        <Label className="mb-0.5" htmlFor={htmlFor}>
+          {label}
+        </Label>
+      )}
       <Select onValueChange={onValueChange} defaultValue={defaultValue}>
         <SelectTrigger
           id={id}
