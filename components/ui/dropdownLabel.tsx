@@ -19,6 +19,7 @@ interface ISelectLabelProps extends SelectTriggerProps {
   defaultValue?: string;
   placeholder: string;
   error?: FieldError | undefined;
+  outline?: boolean;
 }
 
 const DropdownLabel = ({
@@ -30,14 +31,19 @@ const DropdownLabel = ({
   defaultValue = "",
   placeholder,
   error,
+  outline = false,
 }: ISelectLabelProps) => {
   return (
-    <div className="space-y-1">
-      <Label htmlFor={htmlFor}>{label}</Label>
+    <div className="text-sm font-medium">
+      <Label className="mb-0.5" htmlFor={htmlFor}>
+        {label}
+      </Label>
       <Select onValueChange={onValueChange} defaultValue={defaultValue}>
         <SelectTrigger
           id={id}
-          className="w-full md:min-h-12 bg-white border-none"
+          className={`w-full md:min-h-12 bg-white ${
+            outline ? "border-gray-300" : "border-none"
+          }`}
         >
           <div className="flex items-center gap-2 placeholder:text-red-500">
             <MapPinIcon className="h-4 w-4" />

@@ -20,6 +20,7 @@ type CalendarLabelProps = Omit<DayPickerProps, "mode"> & {
   onSelect?: (date: Date | undefined) => void;
   error?: FieldError | undefined;
   placeholder?: string;
+  outline?: boolean;
 };
 
 const CalendarLabel = ({
@@ -30,18 +31,20 @@ const CalendarLabel = ({
   error,
   placeholder = "Selecione uma data",
   id,
+  outline = false,
   ...rest
 }: CalendarLabelProps) => {
   return (
-    <div id={id} className="space-y-1 text-sm font-medium">
+    <div id={id} className="text-sm font-medium">
       <Label htmlFor={htmlFor}>{label}</Label>
       <Popover>
         <PopoverTrigger asChild>
           <Button
             variant="outline"
-            className={`w-full justify-start text-left font-normal hover:bg-white border-none  ${
-              !selected && "text-muted-foreground"
-            } md:min-h-12`}
+            className={`w-full justify-start text-left font-normal hover:bg-white 
+              ${!selected && "text-muted-foreground"} 
+              ${outline ? "border-gray-300" : "border-none"} 
+              md:min-h-12`}
             type="button"
           >
             <CalendarIcon className="mr-2 h-4 w-4" />
