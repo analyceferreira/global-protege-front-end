@@ -1,5 +1,6 @@
 import { CompaniesBar } from "@/components/companiesBar";
 import { Menu } from "@/components/menu";
+import { WhatsappButton } from "@/components/whatsappButton";
 import { Companies } from "@/sections/companies";
 import { Coverages } from "@/sections/coverages";
 import { Destinations } from "@/sections/destinations";
@@ -21,6 +22,7 @@ export default function Home() {
       <Coverages />
       <Steps />
       <FAQ />
+      <WhatsappButton />
       <Footer />
     </div>
   );
