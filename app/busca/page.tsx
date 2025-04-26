@@ -1,7 +1,9 @@
 import { Menu } from "@/components/menu";
 import { SearchFields } from "@/components/search/searchFields";
 import { SectionContainer } from "@/components/sectionContainer";
+import { WhatsappButton } from "@/components/whatsappButton";
 import { Footer } from "@/sections/footer";
+import { PlansSection } from "@/sections/plans";
 
 export default function ResultadosPage() {
   return (
@@ -9,6 +11,8 @@ export default function ResultadosPage() {
       <Menu />
       <SectionContainer>
         <SearchFields />
+        <PlansSection />
+        <WhatsappButton />
       </SectionContainer>
       <Footer />
     </div>

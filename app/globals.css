@@ -13,6 +13,7 @@
   --color-stroke: #bcbcbc;
   --color-stroke-light: #d4dbde;
   --color-error: oklch(57.7% 0.245 27.325);
+  --color-success: #00a63e;
   --text-tiny: 0.75rem;
 }
 
@@ -24,6 +25,14 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --grid-cols-13: repeat(13, minmax(0, 1fr));
+  --grid-cols-14: repeat(14, minmax(0, 1fr));
+  --grid-cols-15: repeat(15, minmax(0, 1fr));
+  --grid-cols-16: repeat(16, minmax(0, 1fr));
+  --grid-cols-17: repeat(17, minmax(0, 1fr));
+  --grid-cols-18: repeat(18, minmax(0, 1fr));
+  --grid-cols-19: repeat(19, minmax(0, 1fr));
+  --grid-cols-20: repeat(20, minmax(0, 1fr));
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

@@ -1,0 +1,1287 @@
+[
+  {
+    "id": 1,
+    "company": "Affinity",
+    "logo": "/companies/affinity.jpeg",
+    "plan": "Smart Cover 40 Europa",
+    "ageRange": "0 a 75 anos",
+    "elderlyValue": "R$ 274,97 maiores de 64 anos",
+    "medicalExpenses": 40000,
+    "baggageExpenses": 1000,
+    "value": 332.52,
+    "valorComDesconto": 315.89,
+    "costBenefit": 8,
+    "coverages": [
+      {
+        "id": 1,
+        "title": "Viagem",
+        "items": [
+          {
+            "id": 1,
+            "title": "Atraso de Voo",
+            "description": "Cobertura para despesas com alimentação, hospedagem e transporte em caso de atraso de voo superior a 6 horas.",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Bagagem",
+        "items": [
+          {
+            "id": 1,
+            "title": "Extravio de bagagem",
+            "description": "Indenização em caso de extravio definitivo da bagagem durante o transporte.",
+            "value": 500
+          },
+          {
+            "id": 2,
+            "title": "Atraso na Entrega de Bagagem",
+            "value": false
+          },
+          {
+            "id": 3,
+            "title": "Assistência para Localização de Bagagem",
+            "description": "Serviço de assistência para ajudar a localizar bagagens extraviadas.",
+            "value": true
+          },
+          {
+            "id": 4,
+            "title": "Estrago de bagagem",
+            "description": "Indenização para reparos ou substituição em caso de danos à bagagem durante o transporte.",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Mala, bolsa e mochila protegida",
+            "description": "Cobertura para roubo ou furto qualificado de malas, bolsas e mochilas durante a viagem.",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Assistência Médica",
+        "items": [
+          {
+            "id": 1,
+            "title": "Assistência Médica (DMHO)",
+            "description": "Cobertura para despesas médicas, hospitalares e odontológicas em caso de acidente ou doença durante a viagem.",
+            "value": 40000
+          },
+          {
+            "id": 2,
+            "title": "Despesas Farmacêuticas",
+            "description": "Reembolso de despesas com medicamentos prescritos durante atendimento médico na viagem.",
+            "value": 400
+          },
+          {
+            "id": 3,
+            "title": "Acidente por Esporte",
+            "description": "Cobertura para despesas médicas resultantes de acidentes durante a prática de esportes amadores.",
+            "value": 40000
+          },
+          {
+            "id": 4,
+            "title": "Fisioterapia",
+            "description": "Cobertura para sessões de fisioterapia prescritas por médico durante a viagem.",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Complicações na Gestação",
+            "description": "Cobertura para despesas médicas relacionadas a complicações na gestação até a 28ª semana.",
+            "value": 40000
+          },
+          {
+            "id": 6,
+            "title": "Despesas Odontológicas",
+            "description": "Cobertura para tratamentos odontológicos de emergência durante a viagem.",
+            "value": 40000
+          },
+          {
+            "id": 7,
+            "title": "Condição Pré-Existente",
+            "description": "Cobertura para despesas médicas relacionadas a condições pré-existentes estabilizadas.",
+            "value": 40000
+          },
+          {
+            "id": 8,
+            "title": "Prorrogação de Estadia",
+            "description": "Cobertura para despesas com hospedagem em caso de recomendação médica para prolongar a estadia.",
+            "value": false
+          },
+          {
+            "id": 9,
+            "title": "Traslado médico em caso de acidente ou doença",
+            "description": "Cobertura para transporte médico em caso de acidente ou doença durante a viagem.",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "COVID-19",
+        "items": [
+          {
+            "id": 1,
+            "title": "Despesas Médica e Hospitalares por COVID-19 em viagem",
+            "description": "Cobertura para despesas médicas e hospitalares relacionadas à COVID-19 durante a viagem.",
+            "value": 40000
+          },
+          {
+            "id": 2,
+            "title": "Indenização por Hospitalização por COVID-19",
+            "description": "Pagamento de indenização em caso de hospitalização por COVID-19 durante a viagem.",
+            "value": false
+          },
+          {
+            "id": 3,
+            "title": "Traslado de Corpo devido a morte por COVID-19 durante a viagem",
+            "description": "Cobertura para repatriação do corpo em caso de falecimento por COVID-19 durante a viagem.",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Repatriação",
+        "items": [
+          {
+            "id": 1,
+            "title": "Translado do Corpo",
+            "description": "Cobertura para despesas com o transporte do corpo em caso de falecimento durante a viagem.",
+            "value": 20000
+          },
+          {
+            "id": 2,
+            "title": "Regresso Sanitário",
+            "description": "Cobertura para transporte médico de retorno ao país de origem em caso de acidente ou doença grave.",
+            "value": 20000
+          },
+          {
+            "id": 3,
+            "title": "Retorno Antecipado do Segurado por roubo em domicílio ou comercial",
+            "description": "Cobertura para despesas com retorno antecipado em caso de roubo na residência ou estabelecimento comercial.",
+            "value": false
+          },
+          {
+            "id": 4,
+            "title": "Retorno do Segurado",
+            "description": "Cobertura para despesas com retorno ao país de origem após alta hospitalar.",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Retorno Antecipado do Acompanhante",
+            "description": "Cobertura para despesas com retorno antecipado do acompanhante em caso de hospitalização ou falecimento do segurado.",
+            "value": false
+          },
+          {
+            "id": 6,
+            "title": "Retorno Antecipado do Segurado",
+            "description": "Cobertura para despesas com retorno antecipado em caso de falecimento de familiar.",
+            "value": false
+          },
+          {
+            "id": 7,
+            "title": "Translado executivo",
+            "description": "Serviço de transporte executivo em caso de necessidade médica.",
+            "value": false
+          },
+          {
+            "id": 8,
+            "title": "Repatriação administrativa",
+            "description": "Cobertura para despesas administrativas relacionadas à repatriação.",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Fianças",
+        "items": [
+          {
+            "id": 1,
+            "title": "Fianças e Despesas Legais",
+            "description": "Cobertura para pagamento de fianças e despesas legais em caso de processos judiciais durante a viagem.",
+            "value": false
+          },
+          {
+            "id": 2,
+            "title": "Assistência Jurídica",
+            "description": "Serviço de assistência jurídica em caso de problemas legais durante a viagem.",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Outros",
+        "items": [
+          {
+            "id": 1,
+            "title": "Transmissão de Mensagem Urgente",
+            "description": "Serviço de transmissão de mensagens urgentes para familiares ou empresas.",
+            "value": true
+          },
+          {
+            "id": 2,
+            "title": "Invalidez permanente total ou parcial por acidente em viagem",
+            "description": "Indenização em caso de invalidez permanente total ou parcial causada por acidente durante a viagem.",
+            "value": 8000
+          },
+          {
+            "id": 3,
+            "title": "Morte Acidental",
+            "description": "Indenização para beneficiários em caso de morte acidental durante a viagem.",
+            "value": 8000
+          },
+          {
+            "id": 4,
+            "title": "Compra protegida",
+            "description": "Cobertura para roubo ou danos a produtos adquiridos durante a viagem.",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Despesas com PET",
+            "description": "Cobertura para despesas veterinárias de emergência para animais de estimação durante a viagem.",
+            "value": false
+          },
+          {
+            "id": 6,
+            "title": "Concierge",
+            "description": "Serviço de concierge para reservas, informações e assistência durante a viagem.",
+            "value": true
+          },
+          {
+            "id": 7,
+            "title": "Orientação em caso de perda de documentos",
+            "description": "Assistência para obtenção de novos documentos em caso de perda ou roubo.",
+            "value": true
+          },
+          {
+            "id": 8,
+            "title": "Franquia a pagar para usar o seguro",
+            "description": "Valor de franquia que deve ser pago pelo segurado para acionar o seguro.",
+            "value": false
+          },
+          {
+            "id": 9,
+            "title": "Acompanhante em caso de hospitalização prolongada",
+            "value": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "company": "AssistCard",
+    "logo": "/companies/assistcard.jpg",
+    "plan": "Premium Europa",
+    "ageRange": "0 a 80 anos",
+    "elderlyValue": "R$ 290,50 maiores de 64 anos",
+    "value": 399.99,
+    "valorComDesconto": 379.99,
+    "medicalExpenses": 30000,
+    "baggageExpenses": 800,
+    "costBenefit": 7,
+    "coverages": [
+      {
+        "id": 1,
+        "title": "Viagem",
+        "items": [
+          {
+            "id": 1,
+            "title": "Atraso de Voo",
+            "value": true
+          },
+          {
+            "id": 2,
+            "title": "Interrupção de Viagem",
+            "value": true
+          },
+          {
+            "id": 3,
+            "title": "Cancelamento de Viagem",
+            "value": 800
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Bagagem",
+        "items": [
+          {
+            "id": 1,
+            "title": "Extravio de bagagem",
+            "value": 1500
+          },
+          {
+            "id": 2,
+            "title": "Atraso na Entrega de Bagagem",
+            "value": true
+          },
+          {
+            "id": 3,
+            "title": "Assistência para Localização de Bagagem",
+            "value": true
+          },
+          {
+            "id": 4,
+            "title": "Estrago de bagagem",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Mala, bolsa e mochila protegida",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Assistência Médica",
+        "items": [
+          {
+            "id": 1,
+            "title": "Assistência Médica (DMHO)",
+            "value": 60000
+          },
+          {
+            "id": 2,
+            "title": "Despesas Farmacêuticas",
+            "value": 600
+          },
+          {
+            "id": 3,
+            "title": "Acidente por Esporte",
+            "value": 60000
+          },
+          {
+            "id": 4,
+            "title": "Fisioterapia",
+            "value": true
+          },
+          {
+            "id": 5,
+            "title": "Complicações na Gestação",
+            "value": 60000
+          },
+          {
+            "id": 6,
+            "title": "Despesas Odontológicas",
+            "value": 60000
+          },
+          {
+            "id": 7,
+            "title": "Condição Pré-Existente",
+            "value": 60000
+          },
+          {
+            "id": 8,
+            "title": "Prorrogação de Estadia",
+            "value": true
+          },
+          {
+            "id": 9,
+            "title": "Traslado médico em caso de acidente ou doença",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "COVID-19",
+        "items": [
+          {
+            "id": 1,
+            "title": "Despesas Médica e Hospitalares por COVID-19 em viagem",
+            "value": 60000
+          },
+          {
+            "id": 2,
+            "title": "Indenização por Hospitalização por COVID-19",
+            "value": true
+          },
+          {
+            "id": 3,
+            "title": "Traslado de Corpo devido a morte por COVID-19 durante a viagem",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Repatriação",
+        "items": [
+          {
+            "id": 1,
+            "title": "Translado do Corpo",
+            "value": 30000
+          },
+          {
+            "id": 2,
+            "title": "Regresso Sanitário",
+            "value": 30000
+          },
+          {
+            "id": 3,
+            "title": "Retorno Antecipado do Segurado por roubo em domicílio ou comercial",
+            "value": true
+          },
+          {
+            "id": 4,
+            "title": "Retorno do Segurado",
+            "value": true
+          },
+          {
+            "id": 5,
+            "title": "Retorno Antecipado do Acompanhante",
+            "value": true
+          },
+          {
+            "id": 6,
+            "title": "Retorno Antecipado do Segurado",
+            "value": true
+          },
+          {
+            "id": 7,
+            "title": "Translado executivo",
+            "value": false
+          },
+          {
+            "id": 8,
+            "title": "Repatriação administrativa",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Fianças",
+        "items": [
+          {
+            "id": 1,
+            "title": "Fianças e Despesas Legais",
+            "value": true
+          },
+          {
+            "id": 2,
+            "title": "Assistência Jurídica",
+            "value": 8000
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Outros",
+        "items": [
+          {
+            "id": 1,
+            "title": "Transmissão de Mensagem Urgente",
+            "value": true
+          },
+          {
+            "id": 2,
+            "title": "Invalidez permanente total ou parcial por acidente em viagem",
+            "value": 10000
+          },
+          {
+            "id": 3,
+            "title": "Morte Acidental",
+            "value": 10000
+          },
+          {
+            "id": 4,
+            "title": "Compra protegida",
+            "value": true
+          },
+          {
+            "id": 5,
+            "title": "Despesas com PET",
+            "value": false
+          },
+          {
+            "id": 6,
+            "title": "Concierge",
+            "value": true
+          },
+          {
+            "id": 7,
+            "title": "Orientação em caso de perda de documentos",
+            "value": true
+          },
+          {
+            "id": 8,
+            "title": "Franquia a pagar para usar o seguro",
+            "value": false
+          },
+          {
+            "id": 9,
+            "title": "Acompanhante em caso de hospitalização prolongada",
+            "value": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "company": "Coris",
+    "logo": "/companies/coris.jpg",
+    "plan": "Basic Europa",
+    "ageRange": "0 a 70 anos",
+    "elderlyValue": "R$ 250,00 maiores de 64 anos",
+    "value": 299.9,
+    "valorComDesconto": 269.9,
+    "medicalExpenses": 30000,
+    "baggageExpenses": 800,
+    "costBenefit": 6,
+    "coverages": [
+      {
+        "id": 1,
+        "title": "Viagem",
+        "items": [
+          {
+            "id": 1,
+            "title": "Atraso de Voo",
+            "value": true
+          },
+          {
+            "id": 2,
+            "title": "Interrupção de Viagem",
+            "value": false
+          },
+          {
+            "id": 3,
+            "title": "Cancelamento de Viagem",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Bagagem",
+        "items": [
+          {
+            "id": 1,
+            "title": "Extravio de bagagem",
+            "value": 800
+          },
+          {
+            "id": 2,
+            "title": "Atraso na Entrega de Bagagem",
+            "value": false
+          },
+          {
+            "id": 3,
+            "title": "Assistência para Localização de Bagagem",
+            "value": false
+          },
+          {
+            "id": 4,
+            "title": "Estrago de bagagem",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Mala, bolsa e mochila protegida",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Assistência Médica",
+        "items": [
+          {
+            "id": 1,
+            "title": "Assistência Médica (DMHO)",
+            "value": 30000
+          },
+          {
+            "id": 2,
+            "title": "Despesas Farmacêuticas",
+            "value": 300
+          },
+          {
+            "id": 3,
+            "title": "Acidente por Esporte",
+            "value": false
+          },
+          {
+            "id": 4,
+            "title": "Fisioterapia",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Complicações na Gestação",
+            "value": false
+          },
+          {
+            "id": 6,
+            "title": "Despesas Odontológicas",
+            "value": 1000
+          },
+          {
+            "id": 7,
+            "title": "Condição Pré-Existente",
+            "value": false
+          },
+          {
+            "id": 8,
+            "title": "Prorrogação de Estadia",
+            "value": false
+          },
+          {
+            "id": 9,
+            "title": "Traslado médico em caso de acidente ou doença",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "COVID-19",
+        "items": [
+          {
+            "id": 1,
+            "title": "Despesas Médica e Hospitalares por COVID-19 em viagem",
+            "value": false
+          },
+          {
+            "id": 2,
+            "title": "Indenização por Hospitalização por COVID-19",
+            "value": false
+          },
+          {
+            "id": 3,
+            "title": "Traslado de Corpo devido a morte por COVID-19 durante a viagem",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Repatriação",
+        "items": [
+          {
+            "id": 1,
+            "title": "Translado do Corpo",
+            "value": 15000
+          },
+          {
+            "id": 2,
+            "title": "Regresso Sanitário",
+            "value": false
+          },
+          {
+            "id": 3,
+            "title": "Retorno Antecipado do Segurado por roubo em domicílio ou comercial",
+            "value": false
+          },
+          {
+            "id": 4,
+            "title": "Retorno do Segurado",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Retorno Antecipado do Acompanhante",
+            "value": false
+          },
+          {
+            "id": 6,
+            "title": "Retorno Antecipado do Segurado",
+            "value": false
+          },
+          {
+            "id": 7,
+            "title": "Translado executivo",
+            "value": false
+          },
+          {
+            "id": 8,
+            "title": "Repatriação administrativa",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Fianças",
+        "items": [
+          {
+            "id": 1,
+            "title": "Fianças e Despesas Legais",
+            "value": false
+          },
+          {
+            "id": 2,
+            "title": "Assistência Jurídica",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Outros",
+        "items": [
+          {
+            "id": 1,
+            "title": "Transmissão de Mensagem Urgente",
+            "value": true
+          },
+          {
+            "id": 2,
+            "title": "Invalidez permanente total ou parcial por acidente em viagem",
+            "value": 5000
+          },
+          {
+            "id": 3,
+            "title": "Morte Acidental",
+            "value": 5000
+          },
+          {
+            "id": 4,
+            "title": "Compra protegida",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Despesas com PET",
+            "value": false
+          },
+          {
+            "id": 6,
+            "title": "Concierge",
+            "value": false
+          },
+          {
+            "id": 7,
+            "title": "Orientação em caso de perda de documentos",
+            "value": true
+          },
+          {
+            "id": 8,
+            "title": "Franquia a pagar para usar o seguro",
+            "value": false
+          },
+          {
+            "id": 9,
+            "title": "Acompanhante em caso de hospitalização prolongada",
+            "value": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "company": "Gta",
+    "logo": "/companies/gta.jpg",
+    "plan": "Gold Europa",
+    "ageRange": "0 a 85 anos",
+    "elderlyValue": "R$ 320,00 maiores de 64 anos",
+    "value": 450.0,
+    "valorComDesconto": 427.5,
+    "medicalExpenses": 20000,
+    "baggageExpenses": 500,
+    "costBenefit": 9,
+    "coverages": [
+      {
+        "id": 1,
+        "title": "Viagem",
+        "items": [
+          {
+            "id": 1,
+            "title": "Atraso de Voo",
+            "value": true
+          },
+          {
+            "id": 2,
+            "title": "Interrupção de Viagem",
+            "value": true
+          },
+          {
+            "id": 3,
+            "title": "Cancelamento de Viagem",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Bagagem",
+        "items": [
+          {
+            "id": 1,
+            "title": "Extravio de bagagem",
+            "value": 2000
+          },
+          {
+            "id": 2,
+            "title": "Atraso na Entrega de Bagagem",
+            "value": true
+          },
+          {
+            "id": 3,
+            "title": "Assistência para Localização de Bagagem",
+            "value": true
+          },
+          {
+            "id": 4,
+            "title": "Estrago de bagagem",
+            "value": true
+          },
+          {
+            "id": 5,
+            "title": "Mala, bolsa e mochila protegida",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Assistência Médica",
+        "items": [
+          {
+            "id": 1,
+            "title": "Assistência Médica (DMHO)",
+            "value": 100000
+          },
+          {
+            "id": 2,
+            "title": "Despesas Farmacêuticas",
+            "value": 1000
+          },
+          {
+            "id": 3,
+            "title": "Acidente por Esporte",
+            "value": 100000
+          },
+          {
+            "id": 4,
+            "title": "Fisioterapia",
+            "value": true
+          },
+          {
+            "id": 5,
+            "title": "Complicações na Gestação",
+            "value": 100000
+          },
+          {
+            "id": 6,
+            "title": "Despesas Odontológicas",
+            "value": 100000
+          },
+          {
+            "id": 7,
+            "title": "Condição Pré-Existente",
+            "value": 100000
+          },
+          {
+            "id": 8,
+            "title": "Prorrogação de Estadia",
+            "value": true
+          },
+          {
+            "id": 9,
+            "title": "Traslado médico em caso de acidente ou doença",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "COVID-19",
+        "items": [
+          {
+            "id": 1,
+            "title": "Despesas Médica e Hospitalares por COVID-19 em viagem",
+            "value": 100000
+          },
+          {
+            "id": 2,
+            "title": "Indenização por Hospitalização por COVID-19",
+            "value": true
+          },
+          {
+            "id": 3,
+            "title": "Traslado de Corpo devido a morte por COVID-19 durante a viagem",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Repatriação",
+        "items": [
+          {
+            "id": 1,
+            "title": "Translado do Corpo",
+            "value": 50000
+          },
+          {
+            "id": 2,
+            "title": "Regresso Sanitário",
+            "value": 50000
+          },
+          {
+            "id": 3,
+            "title": "Retorno Antecipado do Segurado por roubo em domicílio ou comercial",
+            "value": true
+          },
+          {
+            "id": 4,
+            "title": "Retorno do Segurado",
+            "value": true
+          },
+          {
+            "id": 5,
+            "title": "Retorno Antecipado do Acompanhante",
+            "value": true
+          },
+          {
+            "id": 6,
+            "title": "Retorno Antecipado do Segurado",
+            "value": true
+          },
+          {
+            "id": 7,
+            "title": "Translado executivo",
+            "value": true
+          },
+          {
+            "id": 8,
+            "title": "Repatriação administrativa",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Fianças",
+        "items": [
+          {
+            "id": 1,
+            "title": "Fianças e Despesas Legais",
+            "value": true
+          },
+          {
+            "id": 2,
+            "title": "Assistência Jurídica",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Outros",
+        "items": [
+          {
+            "id": 1,
+            "title": "Transmissão de Mensagem Urgente",
+            "value": true
+          },
+          {
+            "id": 2,
+            "title": "Invalidez permanente total ou parcial por acidente em viagem",
+            "value": 15000
+          },
+          {
+            "id": 3,
+            "title": "Morte Acidental",
+            "value": 15000
+          },
+          {
+            "id": 4,
+            "title": "Compra protegida",
+            "value": true
+          },
+          {
+            "id": 5,
+            "title": "Despesas com PET",
+            "value": true
+          },
+          {
+            "id": 6,
+            "title": "Concierge",
+            "value": true
+          },
+          {
+            "id": 7,
+            "title": "Orientação em caso de perda de documentos",
+            "value": true
+          },
+          {
+            "id": 8,
+            "title": "Franquia a pagar para usar o seguro",
+            "value": false
+          },
+          {
+            "id": 9,
+            "title": "Acompanhante em caso de hospitalização prolongada",
+            "value": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "company": "Ita",
+    "logo": "/companies/ita.jpg",
+    "plan": "Economy Europa",
+    "ageRange": "0 a 65 anos",
+    "elderlyValue": "R$ 220,00 maiores de 64 anos",
+    "value": 249.9,
+    "valorComDesconto": 224.9,
+    "medicalExpenses": 20000,
+    "baggageExpenses": 500,
+    "costBenefit": 5,
+    "coverages": [
+      {
+        "id": 1,
+        "title": "Viagem",
+        "items": [
+          {
+            "id": 1,
+            "title": "Atraso de Voo",
+            "value": false
+          },
+          {
+            "id": 2,
+            "title": "Interrupção de Viagem",
+            "value": false
+          },
+          {
+            "id": 3,
+            "title": "Cancelamento de Viagem",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Bagagem",
+        "items": [
+          {
+            "id": 1,
+            "title": "Extravio de bagagem",
+            "value": 500
+          },
+          {
+            "id": 2,
+            "title": "Atraso na Entrega de Bagagem",
+            "value": false
+          },
+          {
+            "id": 3,
+            "title": "Assistência para Localização de Bagagem",
+            "value": false
+          },
+          {
+            "id": 4,
+            "title": "Estrago de bagagem",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Mala, bolsa e mochila protegida",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Assistência Médica",
+        "items": [
+          {
+            "id": 1,
+            "title": "Assistência Médica (DMHO)",
+            "value": 20000
+          },
+          {
+            "id": 2,
+            "title": "Despesas Farmacêuticas",
+            "value": 200
+          },
+          {
+            "id": 3,
+            "title": "Acidente por Esporte",
+            "value": false
+          },
+          {
+            "id": 4,
+            "title": "Fisioterapia",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Complicações na Gestação",
+            "value": false
+          },
+          {
+            "id": 6,
+            "title": "Despesas Odontológicas",
+            "value": 500
+          },
+          {
+            "id": 7,
+            "title": "Condição Pré-Existente",
+            "value": false
+          },
+          {
+            "id": 8,
+            "title": "Prorrogação de Estadia",
+            "value": false
+          },
+          {
+            "id": 9,
+            "title": "Traslado médico em caso de acidente ou doença",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "COVID-19",
+        "items": [
+          {
+            "id": 1,
+            "title": "Despesas Médica e Hospitalares por COVID-19 em viagem",
+            "value": false
+          },
+          {
+            "id": 2,
+            "title": "Indenização por Hospitalização por COVID-19",
+            "value": false
+          },
+          {
+            "id": 3,
+            "title": "Traslado de Corpo devido a morte por COVID-19 durante a viagem",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Repatriação",
+        "items": [
+          {
+            "id": 1,
+            "title": "Translado do Corpo",
+            "value": 10000
+          },
+          {
+            "id": 2,
+            "title": "Regresso Sanitário",
+            "value": false
+          },
+          {
+            "id": 3,
+            "title": "Retorno Antecipado do Segurado por roubo em domicílio ou comercial",
+            "value": false
+          },
+          {
+            "id": 4,
+            "title": "Retorno do Segurado",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Retorno Antecipado do Acompanhante",
+            "value": false
+          },
+          {
+            "id": 6,
+            "title": "Retorno Antecipado do Segurado",
+            "value": false
+          },
+          {
+            "id": 7,
+            "title": "Translado executivo",
+            "value": false
+          },
+          {
+            "id": 8,
+            "title": "Repatriação administrativa",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Fianças",
+        "items": [
+          {
+            "id": 1,
+            "title": "Fianças e Despesas Legais",
+            "value": false
+          },
+          {
+            "id": 2,
+            "title": "Assistência Jurídica",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Outros",
+        "items": [
+          {
+            "id": 1,
+            "title": "Transmissão de Mensagem Urgente",
+            "value": false
+          },
+          {
+            "id": 2,
+            "title": "Invalidez permanente total ou parcial por acidente em viagem",
+            "value": 3000
+          },
+          {
+            "id": 3,
+            "title": "Morte Acidental",
+            "value": 3000
+          },
+          {
+            "id": 4,
+            "title": "Compra protegida",
+            "value": false
+          },
+          {
+            "id": 5,
+            "title": "Despesas com PET",
+            "value": false
+          },
+          {
+            "id": 6,
+            "title": "Concierge",
+            "value": false
+          },
+          {
+            "id": 7,
+            "title": "Orientação em caso de perda de documentos",
+            "value": true
+          },
+          {
+            "id": 8,
+            "title": "Franquia a pagar para usar o seguro",
+            "value": false
+          },
+          {
+            "id": 9,
+            "title": "Acompanhante em caso de hospitalização prolongada",
+            "value": false
+          }
+        ]
+      }
+    ]
+  }
+]
