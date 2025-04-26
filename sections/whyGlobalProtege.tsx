@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { Card } from "@/components/card";
+import { HomeCard } from "@/components/homeCard";
 import { SectionContainer } from "@/components/sectionContainer";
 import SectionTitle from "@/components/sectionTitle";
 import { useWhys } from "@/hooks/whys";
@@ -10,11 +10,11 @@ const WhyGlobalProtege: React.FC = async () => {
   const cards: IWhysItem[] = await useWhys();
 
   const renderCards = () => {
-    return cards.map((card, index) => (
-      <Card
+    return cards.map((Homecard, index) => (
+      <HomeCard
         key={index}
-        title={card.title}
-        description={card.description}
+        title={Homecard.title}
+        description={Homecard.description}
         titleClassName="md:text-2xl"
         className="md:p-3 md:max-w-[30%] md:h-full bg-white/80"
         textCenter

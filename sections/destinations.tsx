@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { SectionContainer } from "@/components/sectionContainer";
-import { Card } from "@/components/card";
+import { HomeCard } from "@/components/homeCard";
 import SectionTitle from "@/components/sectionTitle";
 import { useDestinations } from "@/hooks/destinations";
 import { IDestinationsItem } from "@/services/api/destinations";
@@ -11,7 +11,7 @@ const Destinations: React.FC = async () => {
 
   const renderCards = () => {
     return destinations.map((destination) => (
-      <Card
+      <HomeCard
         key={destination.id}
         title={destination.title}
         description={destination.description}
