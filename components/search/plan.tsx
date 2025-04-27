@@ -2,24 +2,30 @@
 
 import { CheckIcon } from "lucide-react";
 import Image from "next/image";
-import React, { Key, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { PlansCoveragesModal } from "./planCoverageModal";
 import { cn } from "@/lib/utils";
 import { Plan } from "@/utils/types/plan";
 
 type PlanProps = {
-  key?: Key | null | undefined;
   id?: string | undefined;
-  plan?: Plan;
+  plan: Plan;
   label?: "cost-benefit" | "lowest-price" | "best-coverage";
+  discountPercent?: number;
   promoPaymentMethod: {
     paymentMethod: string;
     discount: number;
   };
 };
 
-const PlanCard = ({ key, id, plan, label, promoPaymentMethod }: PlanProps) => {
+const PlanCard = ({
+  id,
+  plan,
+  label,
+  discountPercent,
+  promoPaymentMethod,
+}: PlanProps) => {
   const [openCoverageModal, setOpenCoverageModal] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<Plan | null>(null);
 
@@ -44,34 +50,31 @@ const PlanCard = ({ key, id, plan, label, promoPaymentMethod }: PlanProps) => {
   >();
 
   useEffect(() => {
-    switch (label) {
-      case "cost-benefit":
-        setLabelDetails({
-          text: " Melhor custo benefício",
-          color: "bg-green-600",
-        });
-        break;
-      case "lowest-price":
-        setLabelDetails({ text: "Menor preço", color: "bg-blue-600" });
-        break;
-      case "best-coverage":
-        setLabelDetails({ text: "Maior cobertura", color: "bg-purple-600" });
-        break;
-    }
-  }, [label]);
+    if (label === "cost-benefit" || plan.costBenefit)
+      setLabelDetails({
+        text: " Melhor custo benefício",
+        color: "bg-green-600",
+      });
 
-  if (!plan) {
-    return (
-      <div className="w-full p-4 rounded-md border-1 border-stroke-light flex items-center justify-center">
-        {" "}
-        Nenhum resultado encontrado 😕
-      </div>
-    );
-  }
+    if (label === "lowest-price")
+      setLabelDetails({ text: "Menor preço", color: "bg-blue-600" });
+
+    if (label === "best-coverage")
+      setLabelDetails({ text: "Maior cobertura", color: "bg-purple-600" });
+  }, [label, plan]);
+
+  const price = () => {
+    if (!discountPercent) {
+      return plan.price.toFixed(2);
+    }
+    const price = plan.price;
+    const discountValue = (price * discountPercent) / 100;
+    const discountedPrice = price - discountValue;
+    return discountedPrice.toFixed(2);
+  };
 
   return (
     <div
-      key={key}
       id={id}
       className={`w-full flex flex-col justify-center gap-4 p-2 rounded-md border-1 border-stroke-light relative`}
     >
@@ -140,12 +143,12 @@ const PlanCard = ({ key, id, plan, label, promoPaymentMethod }: PlanProps) => {
         <div className="col-span-5 flex flex-col justify-center pt-4 md:pt-0">
           <div className="text-sm text-gray-600 flex gap-1">
             <p className="line-through text-nowrap">
-              R$ {plan.value.toFixed(2)}
+              R$ {plan.price.toFixed(2)}
             </p>
             <p>em até 11x sem juros no cartão</p>
           </div>
           <div className="text-2xl font-bold flex md:flex-row gap-2 items-center">
-            <p className="text-nowrap">R$ {plan.valorComDesconto.toFixed(2)}</p>
+            <p className="text-nowrap">R$ {price()}</p>
             <div className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-md inline-block  md:max-w-fit h-fit">
               {formatDiscountValeu(
                 promoPaymentMethod.discount,

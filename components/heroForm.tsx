@@ -15,10 +15,8 @@ import { DropdownLabel } from "./ui/dropdownLabel";
 import { CalendarLabel } from "./ui/calendarLabel";
 
 const applyPhoneMask = (value: string) => {
-  // Remove todos os caracteres não numéricos
   const numericValue = value.replace(/\D/g, "");
 
-  // Aplica a máscara conforme o número de dígitos
   if (numericValue.length <= 2) {
     return numericValue.length ? `(${numericValue}` : "";
   } else if (numericValue.length <= 7) {

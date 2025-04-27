@@ -29,7 +29,7 @@ export type Plan = {
   plan: string;
   ageRange: string;
   elderlyValue: string;
-  value: number;
+  price: number;
   medicalExpenses: number;
   baggageExpenses: number;
   valorComDesconto: number;

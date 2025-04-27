@@ -8,7 +8,7 @@
     "elderlyValue": "R$ 274,97 maiores de 64 anos",
     "medicalExpenses": 40000,
     "baggageExpenses": 1000,
-    "value": 332.52,
+    "price": 332.52,
     "valorComDesconto": 315.89,
     "costBenefit": 8,
     "coverages": [
@@ -283,11 +283,11 @@
     "plan": "Premium Europa",
     "ageRange": "0 a 80 anos",
     "elderlyValue": "R$ 290,50 maiores de 64 anos",
-    "value": 399.99,
+    "price": 399.99,
     "valorComDesconto": 379.99,
     "medicalExpenses": 30000,
     "baggageExpenses": 800,
-    "costBenefit": 7,
+    "costBenefit": 9,
     "coverages": [
       {
         "id": 1,
@@ -535,7 +535,7 @@
     "plan": "Basic Europa",
     "ageRange": "0 a 70 anos",
     "elderlyValue": "R$ 250,00 maiores de 64 anos",
-    "value": 299.9,
+    "price": 299.9,
     "valorComDesconto": 269.9,
     "medicalExpenses": 30000,
     "baggageExpenses": 800,
@@ -787,11 +787,11 @@
     "plan": "Gold Europa",
     "ageRange": "0 a 85 anos",
     "elderlyValue": "R$ 320,00 maiores de 64 anos",
-    "value": 450.0,
+    "price": 450.0,
     "valorComDesconto": 427.5,
     "medicalExpenses": 20000,
     "baggageExpenses": 500,
-    "costBenefit": 9,
+    "costBenefit": 4,
     "coverages": [
       {
         "id": 1,
@@ -1039,11 +1039,11 @@
     "plan": "Economy Europa",
     "ageRange": "0 a 65 anos",
     "elderlyValue": "R$ 220,00 maiores de 64 anos",
-    "value": 249.9,
+    "price": 249.9,
     "valorComDesconto": 224.9,
     "medicalExpenses": 20000,
     "baggageExpenses": 500,
-    "costBenefit": 5,
+    "costBenefit": 7,
     "coverages": [
       {
         "id": 1,

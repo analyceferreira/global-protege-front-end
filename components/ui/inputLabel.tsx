@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { FieldError } from "react-hook-form";
 
 interface IInputLabelProps extends React.ComponentProps<"input"> {
-  label: string;
+  label?: string;
   htmlFor: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -21,7 +21,7 @@ const InputLabel = ({
 }: IInputLabelProps) => {
   return (
     <div className="space-y-1 text-sm font-medium">
-      <Label htmlFor={htmlFor}>{label}</Label>
+      {label && <Label htmlFor={htmlFor}>{label}</Label>}
       <Input
         id="celular"
         type="tel"
